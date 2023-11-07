@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: hsl(0, 0%, 86%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  height: 420px;
+  width: 560px;
+  border-radius: 20px 20px 120px 20px;
+  padding: 50px;
+}
+
+.age-form {
+  display: flex;
+  border-bottom: 2px solid hsl(0, 0%, 94%);
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.input-container > label {
+  color: hsl(0, 1%, 44%);
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.input-container > input {
+  box-sizing: border-box;
+  font-size: 32px;
+  width: 140px;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+.age-form > button {
+  background-color: hsl(259, 100%, 65%);
+  position: absolute;
+  bottom: -32px;
+  right: 0;
+  border-radius: 100%;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.age-form > button:active {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.age-result {
+  font-size: 37px;
+  line-height: 35px;
+  font-weight: 800;
+  font-style: italic;
+  /* white-space: nowrap; */
+}
+
+.age-result span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media only screen and (max-width: 720px) {
+  .card{
+    box-sizing: border-box;
+    width: 360px;
+    height: 560px;
+    padding: 40px 20px;
+  }
+
+  .input-container{
+    width: 130px;
+    margin-right:10px;
+  }
+
+  .input-container > input{
+    width: 100px;
+    padding-left: 7px;
+    padding-right: 0px;
+  }
+
+  .age-form {
+    padding-bottom: 70px;
+    margin-bottom: 75px;
+  }
+
+  .age-form > button{
+    right: 40%;
+  }
+
+  .age-result{
+    font-size: 28px;
+  }
+}
